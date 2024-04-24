@@ -1,0 +1,76 @@
+.App{
+    font-family: Montserrat, sans-serif;
+}
+
+.text-gradient{
+    background: linear-gradient(
+        180deg,
+        #ff6535 0%,
+        #ff9e48 48.9%,
+        #ffce58 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.bg-gradient{
+  background: linear-gradient(180deg,#ff6535 0%,#ff9e48 48.9%,#ffce58 100%)
+}
+.border-gradient {
+  border-image: linear-gradient(180deg, #ff6535 0%, #ff9e48 48.9%, #ffce58 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-image-slice: 1;
+  border-radius: 50px;
+}
+
+.login_in_header_bg{
+  background: linear-gradient(180deg, #ff6535 0%, #ff9e48 48.9%, #ffce58 100%);
+}
+
+@media only screen and (max-width: 639px) {
+  .login_in_header_bg{
+    background: none;
+  }
+  .index_bg {
+    background-image: url("./assets/img/bg.png");
+  }
+}
+
+
+input:focus {
+    outline: white 2px !important;
+  }
+
+select option:checked {
+    color: white !important;
+}
+
+/* Track */
+::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c9c9c9; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Radius of the scrollbar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+  }
+  
+  /* Track on hover */
+  ::-webkit-scrollbar-track:hover {
+    background: #f1f1f1; /* Color of the scrollbar track on hover */
+  }
+  
+  /* Button */
+  ::-webkit-scrollbar-button {
+    display: none; /* Hide scrollbar buttons */
+  }
+
+ 
+
+  
