@@ -42,8 +42,18 @@ const userSchema = new mongoose.Schema(
 		},
 		social_id:{
 			type:String
-		}
-		// createdAt, updatedAt => Member since <createdAt>
+		},
+		referralCode: { type: String, 
+			unique: true, 
+			sparse: true }, 
+		referredBy: { type: mongoose.Schema.Types.ObjectId, 
+			ref: 'User' 
+		},
+		rating:{
+            type:Number,
+			default:0
+        },
+		
 	},
 	{ timestamps: true }
 );
